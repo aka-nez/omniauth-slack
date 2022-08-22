@@ -73,6 +73,10 @@ module OmniAuth
           params['ok'].to_s[/true/i] ||
           false
         end
+
+        def expired?
+          false
+        end
              
         # Intercepts super to return nil instead of an empty string.
         #
